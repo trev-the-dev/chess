@@ -74,3 +74,4 @@ This project follows this roadmap to ensure a smooth development process. Follow
 git clone https://github.com/trev-the-dev/chess.git
 cd chess
 python main.py
+```
