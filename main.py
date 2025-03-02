@@ -12,7 +12,6 @@ SQUARE_SIZE = WIDTH // COLS
 LIGHT = (240, 217, 181)
 DARK = (181, 136, 99)
 
-
 # Create the display
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Chess")
