@@ -10,7 +10,7 @@ This project follows this roadmap to ensure a smooth development process. Follow
 ---
 
 ### 🎨 **1️⃣ Set Up the Chessboard Display**  
-- [ ] 🖥 **Initialize Pygame** in `main.py`  
+- [X] 🖥 **Initialize Pygame** in `main.py`  ✅
 - [ ] 🎨 **Create game constants** (`WIDTH`, `HEIGHT`, etc.)  
 - [ ] 🏁 **Set up board colors** (`LIGHT`, `DARK`)  
 - [ ] 📏 **Write `draw_board()` function**  
