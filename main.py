@@ -28,11 +28,13 @@ def draw_board():
 
 running = True
 while running:
-    screen.fill((0, 0, 0)) # Clear the screen
+    screen.fill((0, 0, 0))  # Clear the screen
     draw_board()
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
+
+    pygame.display.flip()  # Updates the display
 
 pygame.quit()
