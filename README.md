@@ -20,6 +20,7 @@ This project follows this roadmap to ensure a smooth development process. Follow
 
 ### 🏇 **2️⃣ Load & Display Pieces**
 - [ ]  **Load piece images** (store them in a dictionary and scale them)
+- [ ]  **Define a board representation** using a **2D list** of strings for now
 - [ ]  **Write `draw_pieces()` function** to place images on the board
 
 ---
