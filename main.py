@@ -12,10 +12,31 @@ SQUARE_SIZE = WIDTH // COLS
 LIGHT = (240, 217, 181)
 DARK = (181, 136, 99)
 
+# Load piece images
+PIECES = {}
+piece_types = ["P", "R", "N", "B", "Q", "K"]
+for piece in piece_types:
+    PIECES[f"w{piece}"] = pygame.image.load(f"assets/w{piece}.png")
+    PIECES[f"b{piece}"] = pygame.image.load(f"assets/b{piece}.png")
+
+for key in PIECES:
+    PIECES[key] = pygame.transform.scale(PIECES[key], (SQUARE_SIZE, SQUARE_SIZE))
+
+# Chessboard setup
+board = [
+    ["bR", "bN", "bB", "bQ", "bK", "bB", "bN", "bR"],
+    ["bP", "bP", "bP", "bP", "bP", "bP", "bP", "bP"],
+    [".", ".", ".", ".", ".", ".", ".", "."],
+    [".", ".", ".", ".", ".", ".", ".", "."],
+    [".", ".", ".", ".", ".", ".", ".", "."],
+    [".", ".", ".", ".", ".", ".", ".", "."],
+    ["wP", "wP", "wP", "wP", "wP", "wP", "wP", "wP"],
+    ["wR", "wN", "wB", "wQ", "wK", "wB", "wN", "wR"]
+]
+
 # Create the display
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Chess")
-
 
 def draw_board():
     """Draws the chessboard."""
