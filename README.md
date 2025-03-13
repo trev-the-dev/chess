@@ -26,7 +26,7 @@ This project follows this roadmap to ensure a smooth development process. Follow
 ---
 
 ### 🔧 **3️⃣ Create a `Piece` Base Class**  
-- [ ] 📜 **Define `Piece` class** in `piece.py`
+- [X] 📜 **Define `Piece` class** in `piece.py`
 
 ---
 
