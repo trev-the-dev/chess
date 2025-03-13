@@ -47,10 +47,20 @@ def draw_board():
             pygame.draw.rect(screen, color, (col * SQUARE_SIZE, row * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE))
 
 
+def draw_pieces():
+    """Draws pieces on the board based on the board list."""
+    for row in range(ROWS):
+        for col in range(COLS):
+            piece = board[row][col]
+            if piece != ".":
+                screen.blit(PIECES[piece], (col * SQUARE_SIZE, row * SQUARE_SIZE))
+
+
 running = True
 while running:
     screen.fill((0, 0, 0))  # Clear the screen
     draw_board()
+    draw_pieces()
 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
