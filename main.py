@@ -38,6 +38,7 @@ board = [
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Chess")
 
+
 def draw_board():
     """Draws the chessboard."""
     for row in range(ROWS):
